@@ -4,7 +4,7 @@
   "description": "A Node.js application that retrieves all videos from a YouTube channel using the YouTube Data API, calculates the total duration of the videos, and outputs it in a human-readable format.",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "npm install && npx tsc",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts"
   },
