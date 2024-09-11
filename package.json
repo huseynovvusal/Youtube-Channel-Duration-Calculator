@@ -1,0 +1,24 @@
+{
+  "name": "youtube-channel-duration-calculator",
+  "version": "1.0.0",
+  "description": "A Node.js application that retrieves all videos from a YouTube channel using the YouTube Data API, calculates the total duration of the videos, and outputs it in a human-readable format.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "author": "Vusal Huseynov",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.4",
+    "express": "^5.0.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
