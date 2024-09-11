@@ -1,4 +1,4 @@
-import express from "express"
+import express, { Request, Response } from "express"
 import dotenv from "dotenv"
 
 import apiRouter from "./routers/index"
@@ -12,6 +12,14 @@ const app = express()
 
 //? Routers
 app.use("/api", apiRouter)
+
+//? Not Found
+app.use((req: Request, res: Response) => {
+  res.status(404).json({
+    success: false,
+    message: "Page Not Found",
+  })
+})
 
 //? Error Handling
 app.use(errorHandler)
